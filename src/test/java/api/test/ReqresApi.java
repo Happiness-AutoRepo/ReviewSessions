@@ -55,6 +55,8 @@ public class ReqresApi {
 		
 		System.out.println(response.getHeaders().asList());
 		
+		given().auth().preemptive().basic("UserName", "Password").when().get();  //authentication and preemptive auth using RestAssured
+		
 	}
 	
 
