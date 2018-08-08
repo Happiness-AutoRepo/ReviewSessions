@@ -17,7 +17,7 @@ import javax.mail.Store;
   *   
   *    Note : work is continuing on email attachment... 
   */
-public class GetEmail {
+public class GetEmailOutlook {
 	
 	/*
 	 *  email address and password. Note: email address varies in accordance with mail server
@@ -31,15 +31,17 @@ public class GetEmail {
 	public static String emailSentDate;
 	
 	public static void main(String[] args) {
-		/*String*/ Object content = getEmailContent(emailID, emailPassword);
-		System.out.println(content.toString());
+		String content = getEmailContent(emailID, emailPassword);
+		
 		System.out.println("Email is from : " + emailSender);
 		System.out.println("Email subject is : "+ emailSubject);
 		System.out.println("Email sent-date : "+ emailSentDate);
+		System.out.println("===================================================");
+		System.out.println(content);
 	}
 	
-	public static /*String*/ Object getEmailContent(String emailID, String emailPassword){
-		/*String*/ Object body= "";
+	public static String getEmailContent(String emailID, String emailPassword){
+		String body= "";
 		try {
 			// set properties for IMAP email server protocol
 			Properties properties = new Properties();
@@ -59,7 +61,7 @@ public class GetEmail {
 			// in this case I want to get the first message in the inbox
 			Message messages[] = emailFolder.getMessages();
 		
-			for (int i = messages.length-1; i < messages.length; i++) {
+			for (int i = messages.length-2; i < messages.length-1; i++) {
 				Message message = messages[i];
 				// get the sender, subject and the sent date
 				emailSender = message.getFrom()[0].toString();
@@ -68,13 +70,13 @@ public class GetEmail {
 	
 				// create object for email content
 				Object emailContentObject = message.getContent();
-//				// break the email content into multi_part. Note: need some research on this.
-//			    Multipart part = (Multipart) emailContentObject;
-//			    // get the first bodyPart of the email content. Note: need some research on this.
-//			    BodyPart bodyPart = part.getBodyPart(0);
-//			    // get the bodyPart and turn in into readable string.
-//				body = bodyPart.getContent().toString();
-				body = /*(String)*/ message.getContent();
+				// break the email content into multi_part. Note: need some research on this.
+			    Multipart part = (Multipart) emailContentObject;
+			    // get the first bodyPart of the email content. Note: need some research on this.
+			    BodyPart bodyPart = part.getBodyPart(0);
+			    // get the bodyPart and turn in into readable string.
+				body = bodyPart.getContent().toString();
+//				body = (String)message.getContent();
 
 			}
 			// close the folder and store 
