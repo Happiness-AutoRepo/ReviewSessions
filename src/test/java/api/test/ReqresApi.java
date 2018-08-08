@@ -10,6 +10,8 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 
+import java.util.Map;
+
 public class ReqresApi {
 	
 	/**
@@ -55,7 +57,10 @@ public class ReqresApi {
 		
 		System.out.println(response.getHeaders().asList());
 		
-		given().auth().preemptive().basic("UserName", "Password").when().get();  //authentication and preemptive auth using RestAssured
+//		given().auth().preemptive().basic("UserName", "Password").when().get();  //authentication and preemptive auth using RestAssured
+		
+		Map jsonData = response.body().as(Map.class);                            // JSON as Map
+		System.out.println(jsonData);											 // You can also represent JSON as Java Object and vice versa using ObjectMapper Class
 		
 	}
 	
