@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Aug 08 02:46:29 EDT 2018</td>
+<td>Started on:</td><td>Thu Aug 09 20:38:21 EDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (489 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26459 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,86 +67,28 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.CukesRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate UI data against csv report", "Applicants Data .csv report"<br/>
-<a href="#Output-2088445230" onClick='toggleBox("Output-2088445230", this, "Show output", "Hide output");'>Show output</a>
+<td title='runners.CukesRunner.runScenario()'><b>runScenario</b><br>Test class: runners.CukesRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate UI data against CSV report", "Applicants data cvs report"<br/>
+<a href="#Output-1658020779" onClick='toggleBox("Output-1658020779", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2088445230" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2088445230">
-<div "result">User can read applicants data from tabel (UNDEFINED)</div><br/>
-<div "result">.csv report is generated (SKIPPED)</div><br/>
-<div "result">Data in UI and csv report should match (SKIPPED)</div><br/>
+<a href="#Output-1658020779" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1658020779">
+<div "result">User is on Applicants report page (PASSED : 8s)</div><br/>
+<div "result">User can read applicants data from table (PASSED : 17s)</div><br/>
+<div "result">csv report is generated (PASSED : 0s)</div><br/>
+<div "result">data in UI and csv report should match (PASSED : 0s)</div><br/>
 </div>
 </td>
-<td><div><pre>org.testng.SkipException: There are undefined steps
-	at cucumber.api.testng.TestCaseResultListener.getError(TestCaseResultListener.java:58)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:59)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2088445230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2088445230'><pre>org.testng.SkipException: There are undefined steps
-	at cucumber.api.testng.TestCaseResultListener.getError(TestCaseResultListener.java:58)
-	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:59)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>runners.CukesRunner@4b952a2d</td></tr>
+<td></td>
+<td>26</td>
+<td>runners.CukesRunner@20322d26</td></tr>
 </table><p>
 </body>
 </html>
