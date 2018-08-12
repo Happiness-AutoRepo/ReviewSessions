@@ -2,63 +2,57 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[<div "result">User is on Applicants report page (PASSED : 8s)</div>]]>
+      <![CDATA[<div "result">User is on Etsy homepage (PASSED : 7s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">User can read applicants data from table (PASSED : 17s)</div>]]>
+      <![CDATA[<div "result">User searches for &quot;wooden spoon&quot; (PASSED : 2s)</div>]]>
     </line>
     <line>
-      <![CDATA[<div "result">csv report is generated (PASSED : 0s)</div>]]>
-    </line>
-    <line>
-      <![CDATA[<div "result">data in UI and csv report should match (PASSED : 0s)</div>]]>
+      <![CDATA[<div "result">Search results should be displayed (PASSED : 0s)</div>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26459" started-at="2018-08-10T00:38:21Z" finished-at="2018-08-10T00:38:47Z">
+  <suite name="Default suite" duration-ms="9835" started-at="2018-08-11T23:21:32Z" finished-at="2018-08-11T23:21:42Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.CukesRunner@20322d26]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.EtsyRunner@5025a98f]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="26459" started-at="2018-08-10T00:38:21Z" finished-at="2018-08-10T00:38:47Z">
-      <class name="runners.CukesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.CukesRunner@20322d26]" name="setUpClass" is-config="true" duration-ms="122" started-at="2018-08-10T00:38:21Z" finished-at="2018-08-10T00:38:21Z">
+    <test name="Default test" duration-ms="9835" started-at="2018-08-11T23:21:32Z" finished-at="2018-08-11T23:21:42Z">
+      <class name="runners.EtsyRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.EtsyRunner@5025a98f]" name="setUpClass" is-config="true" duration-ms="156" started-at="2018-08-11T23:21:32Z" finished-at="2018-08-11T23:21:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.CukesRunner@20322d26]" name="runScenario" duration-ms="26246" started-at="2018-08-10T00:38:21Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-08-10T00:38:47Z">
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.EtsyRunner@5025a98f]" name="runScenario" duration-ms="9591" started-at="2018-08-11T23:21:32Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-08-11T23:21:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Validate UI data against CSV report"]]>
+                <![CDATA["Etsy search for an item"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Applicants data cvs report"]]>
+                <![CDATA["Etsy product search"]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<div "result">User is on Applicants report page (PASSED : 8s)</div>]]>
+              <![CDATA[<div "result">User is on Etsy homepage (PASSED : 7s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">User can read applicants data from table (PASSED : 17s)</div>]]>
+              <![CDATA[<div "result">User searches for &quot;wooden spoon&quot; (PASSED : 2s)</div>]]>
             </line>
             <line>
-              <![CDATA[<div "result">csv report is generated (PASSED : 0s)</div>]]>
-            </line>
-            <line>
-              <![CDATA[<div "result">data in UI and csv report should match (PASSED : 0s)</div>]]>
+              <![CDATA[<div "result">Search results should be displayed (PASSED : 0s)</div>]]>
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.CukesRunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2018-08-10T00:38:47Z" finished-at="2018-08-10T00:38:47Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.EtsyRunner@5025a98f]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2018-08-11T23:21:42Z" finished-at="2018-08-11T23:21:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runners.CukesRunner -->
+      </class> <!-- runners.EtsyRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

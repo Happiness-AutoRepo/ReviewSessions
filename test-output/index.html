@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Marat Metoff\AppData\Local\Temp\testng-eclipse-2088835170\testng-customsuite.xml</span>
+                    <span>C:\Users\Marat Metoff\AppData\Local\Temp\testng-eclipse--1637801015\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="runners.CukesRunner" hash-for-method="runScenario(&quot;Validate UI data against CSV report&quot;, &quot;Applicants data cvs report&quot;)">runScenario("Validate UI data against CSV report", "Applicants data cvs report")</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="runners.EtsyRunner" hash-for-method="runScenario(&quot;Etsy search for an item&quot;, &quot;Etsy product search&quot;)">runScenario("Etsy search for an item", "Etsy product search")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,15 +120,15 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">runners.CukesRunner</span>
+              <span class="class-name">runners.EtsyRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate UI data against CSV report&quot;, &quot;Applicants data cvs report&quot;)">
-                  </a> <!-- runScenario("Validate UI data against CSV report", "Applicants data cvs report") -->
+                  <a name="runScenario(&quot;Etsy search for an item&quot;, &quot;Etsy product search&quot;)">
+                  </a> <!-- runScenario("Etsy search for an item", "Etsy product search") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate UI data against CSV report", "Applicants data cvs report")</span>
+                  <span class="parameters">("Etsy search for an item", "Etsy product search")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -138,7 +138,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Marat Metoff\AppData\Local\Temp\testng-eclipse-2088835170\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Marat Metoff\AppData\Local\Temp\testng-eclipse--1637801015\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,7 +147,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runners.CukesRunner&quot;/&gt;
+      &lt;class name=&quot;runners.EtsyRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -198,13 +198,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runners.CukesRunner')
-data.setCell(0, 3, 26246);
+data.setCell(0, 2, 'runners.EtsyRunner')
+data.setCell(0, 3, 9591);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -216,12 +216,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">runScenario("Validate UI data against CSV report", "Applicants data cvs report")</span>
+              <span class="reporter-method-name">runScenario("Etsy search for an item", "Etsy product search")</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><div "result">User is on Applicants report page (PASSED : 8s)</div></span>
-                <span class="reporter-method-output"><div "result">User can read applicants data from table (PASSED : 17s)</div></span>
-                <span class="reporter-method-output"><div "result">csv report is generated (PASSED : 0s)</div></span>
-                <span class="reporter-method-output"><div "result">data in UI and csv report should match (PASSED : 0s)</div></span>
+                <span class="reporter-method-output"><div "result">User is on Etsy homepage (PASSED : 7s)</div></span>
+                <span class="reporter-method-output"><div "result">User searches for &quot;wooden spoon&quot; (PASSED : 2s)</div></span>
+                <span class="reporter-method-output"><div "result">Search results should be displayed (PASSED : 0s)</div></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -239,18 +238,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">runners.CukesRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">runners.EtsyRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Validate UI data against CSV report", "Applicants data cvs report")</span>
-                <span class="method-start">197 ms</span>
+                <span class="method-name">runScenario("Etsy search for an item", "Etsy product search")</span>
+                <span class="method-start">228 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">26443 ms</span>
+                <span class="method-start">9820 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
